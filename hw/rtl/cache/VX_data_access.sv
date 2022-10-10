@@ -31,7 +31,9 @@ module VX_data_access #(
     input wire                          fill, 
     input wire                          write,
     input wire[`LINE_ADDR_WIDTH-1:0]    addr,
+`IGNORE_UNUSED_BEGIN
     input wire [NUM_PORTS-1:0][WORD_SELECT_BITS-1:0] wsel,
+`IGNORE_UNUSED_END   
     input wire [NUM_PORTS-1:0]          pmask,
     input wire [NUM_PORTS-1:0][WORD_SIZE-1:0] byteen,
     input wire [`WORDS_PER_LINE-1:0][`WORD_WIDTH-1:0] fill_data,
